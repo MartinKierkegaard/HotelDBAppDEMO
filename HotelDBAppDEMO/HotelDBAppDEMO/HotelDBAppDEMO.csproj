@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Booking.cs" />
+    <Compile Include="Enum.cs" />
     <Compile Include="Guest.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="HotelContext.cs" />
@@ -65,6 +66,10 @@
     <Compile Include="Migrations\201510061207573_AddRatingHotel.cs" />
     <Compile Include="Migrations\201510061207573_AddRatingHotel.Designer.cs">
       <DependentUpon>201510061207573_AddRatingHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510061326484_GuestRating.cs" />
+    <Compile Include="Migrations\201510061326484_GuestRating.Designer.cs">
+      <DependentUpon>201510061326484_GuestRating.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
@@ -89,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201510061207573_AddRatingHotel.resx">
       <DependentUpon>201510061207573_AddRatingHotel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510061326484_GuestRating.resx">
+      <DependentUpon>201510061326484_GuestRating.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

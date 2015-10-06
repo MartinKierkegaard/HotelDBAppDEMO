@@ -27,6 +27,9 @@ namespace HotelDBAppDEMO
         [StringLength(50)]
         public string Address { get; set; }
 
+        public GuestRating GuestRating { get; set; }
+
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Booking> Booking { get; set; }
     }
