@@ -4,7 +4,7 @@ SELECT b.Guest_No, COUNT(*) sum
 	Group BY b.Guest_No
 	HAVING COUNT(*)>=5
 
---Update to Bronze membership
+--Update to Gold membership
 UPDATE Guest 
 SET GuestRating = 1
 where exists
