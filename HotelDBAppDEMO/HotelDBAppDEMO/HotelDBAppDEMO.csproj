@@ -58,6 +58,15 @@
     <Compile Include="Guest.cs" />
     <Compile Include="Hotel.cs" />
     <Compile Include="HotelContext.cs" />
+    <Compile Include="Migrations\201510061202515_InitialCreate.cs" />
+    <Compile Include="Migrations\201510061202515_InitialCreate.Designer.cs">
+      <DependentUpon>201510061202515_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510061207573_AddRatingHotel.cs" />
+    <Compile Include="Migrations\201510061207573_AddRatingHotel.Designer.cs">
+      <DependentUpon>201510061207573_AddRatingHotel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
@@ -66,10 +75,21 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
+    <Content Include="SQL\Alter Hotel.sql" />
+    <Content Include="SQL\Find MemberShip.sql" />
     <Content Include="SQL\HotelAppDDL.sql" />
     <Content Include="SQL\HotelAppDML.sql" />
+    <Content Include="SQL\MyHotels.sql" />
+    <Content Include="SQL\update_Rating.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201510061202515_InitialCreate.resx">
+      <DependentUpon>201510061202515_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510061207573_AddRatingHotel.resx">
+      <DependentUpon>201510061207573_AddRatingHotel.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

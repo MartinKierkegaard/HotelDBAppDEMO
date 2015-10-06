@@ -13,25 +13,25 @@ namespace HotelDBAppDEMO
 
             using (var db = new HotelContext())
             {
-                List<Room> LegolandRooms = new List<Room>()
-                {
-                    new Room() {Hotel_No = 200, Room_No = 1, Price = 200, Types = "D"},
-                    new Room() {Hotel_No = 200, Room_No = 2, Price = 250, Types = "S"},
-                    new Room() {Hotel_No = 200, Room_No = 3, Price = 400, Types = "D"},
-                    new Room() {Hotel_No = 200, Room_No = 4, Price = 500, Types = "F"},
-                };
+                //List<Room> LegolandRooms = new List<Room>()
+                //{
+                //    new Room() {Hotel_No = 200, Room_No = 1, Price = 200, Types = "D"},
+                //    new Room() {Hotel_No = 200, Room_No = 2, Price = 250, Types = "S"},
+                //    new Room() {Hotel_No = 200, Room_No = 3, Price = 400, Types = "D"},
+                //    new Room() {Hotel_No = 200, Room_No = 4, Price = 500, Types = "F"},
+                //};
 
-                Hotel MyNewHotel = new Hotel()
-                {
-                    Hotel_No = 300,
-                    Name = "LegolandHotel",
-                    Address = "Legoland vej 1",
-                    Room = LegolandRooms
-                };
+                //Hotel MyNewHotel = new Hotel()
+                //{
+                //    Hotel_No = 300,
+                //    Name = "LegolandHotel",
+                //    Address = "Legoland vej 1",
+                //    Room = LegolandRooms
+                //};
 
-                db.Hotel.Add(MyNewHotel);
+                //db.Hotel.Add(MyNewHotel);
 
-                db.SaveChanges();
+                //db.SaveChanges();
 
                 var hotellist = from h in db.Hotel
                     where h.Hotel_No == 200
@@ -39,7 +39,7 @@ namespace HotelDBAppDEMO
 
                 foreach (var item in hotellist)
                 {
-                    Console.WriteLine(item.Name);
+                    Console.WriteLine("Hotelname : "+ item.Name + item.HotelUrl);
                 }
 
 
