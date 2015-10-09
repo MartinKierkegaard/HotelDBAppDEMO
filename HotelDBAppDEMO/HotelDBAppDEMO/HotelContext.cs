@@ -11,7 +11,7 @@ namespace HotelDBAppDEMO
             : base("name=HotelContext")
         {
         }
-
+        public virtual DbSet<MemberShipType> MemberShipType { get; set; }
         public virtual DbSet<Booking> Booking { get; set; }
         public virtual DbSet<Guest> Guest { get; set; }
         public virtual DbSet<Hotel> Hotel { get; set; }
