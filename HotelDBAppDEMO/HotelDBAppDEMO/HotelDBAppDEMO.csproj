@@ -90,6 +90,7 @@
     <Content Include="SQL\Find MemberShip.sql" />
     <Content Include="SQL\HotelAppDDL.sql" />
     <Content Include="SQL\HotelAppDML.sql" />
+    <Content Include="SQL\InsertMemberShipTypes.sql" />
     <Content Include="SQL\MyHotels.sql" />
     <Content Include="SQL\update_Rating.sql" />
   </ItemGroup>
